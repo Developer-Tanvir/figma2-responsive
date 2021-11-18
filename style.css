@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --primary-color : #D22116;
+    --black-color : #20272E;
+    
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2F2F2;
+}
+img{
+    max-width: 100%;
+}
+iframe{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+.container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 1rem;
+
+    
+}
+p{
+    margin-top: 0;
+}
+.btn{
+    color: #ffffff;
+    background: var(--primary-color);
+    padding: .8rem 1.5rem;
+    border-radius: 40px;
+    transition: 0.8s;
+}
+.btn:hover {
+    background-color: black;
+    box-shadow: red -1px 3px 4px 1px;
+    transform: translateY(-10px);
+}
+/* header section disign */
+header{
+    background: #ffffff;
+    padding: 1rem 0;
+}
+.logo p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+.logo .collor{
+    color: var(--primary-color);
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding-right: 1rem;
+    
+
+}
+/* hero section design */
+.hero-scetion{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.hero-content h1{
+    font-size: 2.2rem;
+    margin-top: 0;
+    text-align: center;
+}
+.hero-content p{
+    letter-spacing: 0.2rem;
+    color: #7B7B7B;
+}
+.hero-img{
+    text-align: center;
+}
+.hero-img img{
+    animation: hero-animason 1s linear 0s infinite alternate;
+}
+
+@keyframes hero-animason {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(15px);
+    }
+}
+/* featuers section  */
+.featuers{
+    background: var(--black-color);
+    position: relative;
+}
+.featuers::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 56px;
+    background: var(--primary-color);
+    top: -50px;
+    left: 0px;
+}
+.featuers::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: url("img/dotsnew.png");
+    top: 22px;
+    left: 41px;
+    animation: feature-animason 8s linear 0s infinite alternate;
+}
+.feature-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.feature ul li{
+    display: flex;
+    justify-content: center;
+}
+.feature ul li p{
+    margin-left: 1rem;
+    padding-top: 0.3rem;
+}
+.feature ul li img {
+    
+    width: 35px;
+    height: 35px;
+}
+
+.feature-img img{
+    animation: feature-animason 3s linear 0s infinite alternate;
+}
+@keyframes feature-animason {
+    from{
+        transform: translateX(50px);
+        
+    }
+    to{
+        transform: rotate(60deg);
+    }
+    
+}
+/* testimonials section design  */
+
+.testimonial{
+    background: var(--primary-color);
+}
+
+.testimonial-section{
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.testimonial-box{
+    max-width: 240px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    animation: hero-animason 2s linear 0s infinite alternate;
+}
+.testimonial-box p{
+    margin-top: 1.5rem;
+}
+.testimonial-box img{
+    margin-top: -4.5rem;
+}
+/* contect and form section  */
+
+
+.contect-section{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+form{
+    width: 410px;
+    animation: hero-animason 2.5s linear 0s infinite alternate;
+    
+}
+input,textarea{
+    display: block;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    font-family: inherit;
+    border-radius: 10px;
+    
+    
+}
+.foot{
+    width: 111%;
+}
+.map{
+    margin-top: 1rem;
+}
+
+/* footer section  */
+.footer{
+    padding: .3rem 0;
+    color: #ffffff;
+    background: var(--black-color);
+}
+.footer h3{
+    margin: 0;
+    padding: .3rem 0;
+    color: #ffffff;
+    background: var(--black-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/* responsive for dextop */
+@media (min-width:768px){
+    /* navigason */
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .logo p{
+        margin-top: 1rem;
+    }
+    nav ul li{
+        margin-left: 2rem;
+    }
+
+
+    /* hero section  */
+    .hero-scetion{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .hero-content{
+        align-items: flex-start;
+        
+    }
+    .hero-content h1{
+        text-align: left;
+        font-size: 45px;
+    }
+    /* fetures section  */
+    .featuers{
+        padding-top: 4rem;
+    }
+    .feature-section{
+        
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .feature-section {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .feature-section p{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    /* testimonial  */
+    .testimonial-section{
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .featuers::before {
+        content: "";
+        position: absolute;
+        height: 164px;
+        width: 86px;
+        background: var(--primary-color);
+        top: -84px;
+        left: 0px;
+    }
+    .featuers::after {
+        content: "";
+        position: absolute;
+        height: 109px;
+        width: 142px;
+        background: url("img/dotsnew.png");
+        top: 22px;
+        left: 41px;
+    }
+    /* contect and form sections */
+    .contect-section{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .foot{
+        width: 45%;
+    }
+
+}
